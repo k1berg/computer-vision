@@ -24,7 +24,11 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+
+  @media (max-width: 767px) {
+    width: 50%;
+  }
 }
 
 .sidebar > div {
@@ -37,10 +41,19 @@ body {
   color: #fff;
 }
 
-.sidebar h1 {
+.name h1 {
   font-size: 40px;
   margin-bottom: 10px;
   margin-top: -30px;
+}
+
+.name {
+  text-align: center;
+
+  @media (max-width: 767px) {
+    transform: rotate(270deg);
+    transform-origin: center;
+  }
 }
 
 .main-slide {
@@ -49,7 +62,12 @@ body {
   top: 0;
   left: 35%;
   width: 65%;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+
+  @media (max-width: 767px) {
+    left: 50%;
+    width: 50%;
+  }
 }
 
 .main-slide > div {
@@ -61,9 +79,9 @@ body {
 }
 
 button {
-  background-color: #fff;
+  background-color: #FFF;
   border: none;
-  color: #aaa;
+  color: #AAA;
   cursor: pointer;
   font-size: 16px;
   padding: 15px;
@@ -82,6 +100,11 @@ button:focus {
   left: 35%;
   top: 50%;
   z-index: 100;
+
+  @media (max-width: 767px) {
+    left: 50%;
+    top: 70%;
+  }
 }
 
 .container .controls button:hover {

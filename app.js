@@ -6,9 +6,6 @@ const container = document.querySelector('.container');
 const slidesCount = mainSlide.querySelectorAll('div').length;
 
 let activeSlideIndex = 0;
-
-console.log(upBtn, downBtn, sidebar, slidesCount, `-${(slidesCount - 1) * 100}vh`);
-
 sidebar.style.top = `-${(slidesCount - 1) * 100}vh`;
 
 upBtn.addEventListener('click', () => {
